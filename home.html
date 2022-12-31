@@ -4,7 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>1-Page Website | Project1</title>
 </head>
 <!-- body -->
@@ -15,47 +17,41 @@
         <p class="topmessage">We 've launched our UX Career Guide 2022! Download for free <a href="home.html">here.</a></p>
     </div>
     <!-- header -->
-        <header>
-             <!-- logo -->
-          <img class="logo" src="img/logo.png" alt="logo">
-          <!-- navigation -->
-            <nav>
+                     <!-- navigation -->
+            <nav class="navbar">
                 <!-- links -->
-                <ul class="nav_links">
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#">Products <i class="fas fa-caret-down"></i></a> </li>
-                        <!-- <div class="dropdown_menu">
-                            <ul class="dropdown_menu">
-                                <li><a href="#">Shirt</a></li>
-                                <li><a href="#">Soaks</a></li>
-                                <li><a href="#">Trouser</a></li>
-                            </ul>
-                        </div> -->
-                    <li><a href="#">Resources <i class="fas fa-caret-down"></i></a> </li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Company <i class="fas fa-caret-down"></i></a></li> 
+                <ul>
+                     <!-- logo -->
+                    <li class="navbar_logo"> <img src="img/logo.png" alt="logo"></li>
+                    <!-- links -->
+                    <li class="navbar_toggle"><i class="fas fa-bars"></i></li>
+                    <li class="navbar_links"><a href="#">Home</a></li> 
+                    <li class="navbar_links"><a href="#">Products <i class="fas fa-caret-down"></i></a> </li>
+                    <li class="navbar_links"><a href="#">Resources <i class="fas fa-caret-down"></i></a> </li>
+                    <li class="navbar_links"><a href="#">Pricing</a></li>
+                    <li class="navbar_links"><a href="#">Company <i class="fas fa-caret-down"></i></a></li> 
+                    <li class="navbar_links"><img src="img/person.png" alt="profile"></li>
                 </ul>
             </nav>
-            <img class="person" src="img/person.png" alt="profile">
-        </header>
+      
         <!-- start of container -->
         <div class="container">
             <div class="row">
                 <div class="col">
                     <p>20 Jun 2022 | 10 min read</p>
                     <h3> Designing user interface <br> aesthetics that sync with <br> the natural environment</h3>
-                    <p>Understanding the nuances of how light effects can be realised in modern user interface design.</p>
+                        <p>Understanding the nuances of how light effects can be realised in modern user interface design.</p>
                     <br>
                     <img class="person2" src="img/person2.png" alt="profile">
-                        <div class="nametag">
-                            <p><strong>Frankie Sullivan</strong> <br>Brand Designer,Studio Studio</p>
-                        </div>
                 </div>
-                <div class="col">
+                
+                <div class="nametag">
+                    <p><strong>Frankie Sullivan</strong> <br>Brand Designer,Studio Studio</p>
+                </div>
+                <div class="row"> 
                     <div class="pic">
-                        <!-- <h5>hithtit</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                    </div>
+                       
+                    </div> 
 
                 </div>
             </div>
@@ -68,6 +64,7 @@
                 <div class="leadpar">
                 orem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the</div>
+                <br>
                 <br>
                 <br>
                 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -160,18 +157,21 @@
         </div>
     <!-- end of section 2 of webpage -->
 
-    <footer class="footer">
-        <div id="tp">
-            <p>Kickstart your design for future today</p>
-            <p>Join over 20,000+ designers already growing with untitled.</p>
+    <!-- section 3 -->
+    <div class="share-p">
+        <p>Share this post</p>
+    </div>
+    <div class="sec3-wrapper">
+           <!-- <p>Share this post</p> -->
+        <div>
+            <input type="text" class="button" value="copy link">
+            <button type="button" class="copy-link-button">
+                <span class="material-icons">content_copy</span>
+            </button>
         </div>
-        
-        <div class="">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-
-    </footer>
+        <a href="#" class="social-media"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-media"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-media"><i class="fab fa-linkedin"></i></a>   
+    </div>
 </body>
 </html>

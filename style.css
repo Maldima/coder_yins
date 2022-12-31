@@ -19,35 +19,39 @@
 .topmessage a:hover {
   color: #1098ad;
 }
-li, a {
-  font-family: "Montserrat" sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #000;
+.navbar ul {
+  display: flex;
+  width: 96%;
+  align-items: center;
+  background-color: white;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+  margin-right: 10px;
+}
+.navbar a {
   text-decoration: none;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+.navbar_logo {
+  flex: 1;
+  font-size: 40px;
+  user-select: none;
+  margin-left: 8.7%;
 }
-.logo {
-  cursor: pointer;
-  margin-left: -40px;
+.navbar_toggle {
+  display: none;
 }
-.nav_links {
-  list-style: none;
+.navbar_links:hover {
+  background-color: cyan;
 }
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
+.navbar_links:hover a {
+  color: white;
 }
-.nav_links li a {
-  transition: all 0.3s ease 0s; 
-}
-.nav_links li a:hover {
-  color: #1098ad;
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-wrap: wrap;
+  }
 }
 .person {
   cursor: pointer;
@@ -55,8 +59,14 @@ header {
   right: 70px;
   top: 7%;
 }
+.person2 {
+  cursor: pointer;
+  position: absolute;
+  left: 137px;
+  top: 78%;
+}
 .container {
-  width: 100%;
+  width: 88%;
   height: 100vh;
   background-position: center;
   padding-left: 9.6%;
@@ -64,11 +74,12 @@ header {
 }
 .row {
   display: flex;
-  height: 88%;
+  height: 80%;
   align-items: center;
 }
 .col {
   flex-basis: 50%;
+  line-height: 2;
 }
 .p {
   font-size: 14px;
@@ -80,7 +91,7 @@ h3 {
   line-height: 48px;
 }
 .pic {
-  width: 710px;
+  width: 770px;
   height: 800px;
   display: inline-block;
   border-radius: 0px;
@@ -100,7 +111,7 @@ h3 {
   font-size: 14px;
   position: absolute;
   right: 1110px;
-  top: 75.4%;
+  top: 80%;
 }
 .bodywrapper {
     width: 600px;
@@ -144,4 +155,106 @@ h3 {
   font-size: 30px;
   padding-left: 140px;
   padding-top: 90px;
+}
+/* .socials ul{
+  display: flex;
+  width: 88%;
+  align-items: center;
+  background-color: white;
+  margin-top: -50px;
+}
+.socials li {
+  list-style-type: none;
+  padding: 1rem;
+  margin-right: 33%;
+}
+.socials a {
+  text-decoration: none;
+}
+.p-para {
+  flex: 1;
+  font-size: 16px;
+  user-select: none;
+  margin-left: 33%;
+} */
+.share-p {
+  display: flex;
+  justify-content: left;
+  margin-top: -45px;
+  margin-bottom: 30px;
+  margin-left: 460px;
+}
+.sec3-wrapper {
+  display: flex;
+  justify-content: right;
+    position: absolute;
+      right: 29%;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.social-media {
+  display: flex;
+  background: none;
+  height: 35px;
+  width: 35px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0);
+  transition: transform 0.5s;
+}
+.social-media i {
+  font-size: 20px;
+  color: rgb(122, 120, 120);
+  transition: tranform 0.5s;
+}
+.social-media:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              -4px -4px 6px -1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.01);
+  transform: translateY(2px)
+}
+.social-media:hover i {
+  transform: scale(0.90);
+}
+.social-media:hover .fa-twitter {
+  color: rgb(84, 124, 199);
+}
+a:hover .fa-facebook {
+  color: blue;
+}
+a:hover .fa-linkedin {
+  color: rgb(26, 26, 72);
+}
+.button {
+  display: flex;
+  background: none;
+  height: 35px;
+  width: 90px;
+  margin: 0 15px;
+  padding: 0px 0px 0px 30px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0);
+  transition: transform 0.5s;
+}
+.copy-link-button {
+  display: flex;
+  flex-grow: 1;
+  /* padding: 0 8px; */
+  font-size: 12px;
+  margin: -30px 15px 0px 12px;
+  background: none;
+  /* border: 1px solid rgb(67, 66, 66); */
 }
